@@ -1,0 +1,5 @@
+def passgen(length=8) 
+chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789' 
+Array.new(length) { chars[rand(chars.length)].chr }.join 
+end 
+print (passgen())
